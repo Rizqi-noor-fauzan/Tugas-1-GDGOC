@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Admin Fauzan</h2>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#" class="one-link"
+              ><i class="bx bxs-dashboard"></i> Dashboard</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="bx bx-line-chart"></i> Analytics</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="bx bx-message-alt-error"></i> Collected Issue</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="bx bxs-file"></i> Customer Details</a>
+          </li>
+          <li>
+            <a href="#"><i class="bx bxs-bell-ring"></i> Notifications</a>
+          </li>
+          <li>
+            <a href="#"><i class="bx bx-message-square-detail"></i> Message</a>
+          </li>
+          <li>
+            <a href="#"><i class="bx bx-cog"></i> Settings</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="logout">
+        <a href="login.html"><i class="bx bx-log-out"></i> Logout</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Navbar -->
+      <header class="navbar">
+        <div class="navbar-left">
+          <div class="input-group">
+            <i class="bx bx-search-alt"></i>
+            <input type="text" placeholder="Search your transaction here" />
+          </div>
+          <div class="icon">
+            <i class="bx bx-question-mark"></i>
+          </div>
+        </div>
+        <div class="navbar-right">
+          <img src="./image/mann.jpg" alt="" />
+          <div class="title-description">
+            <h4>Fauzan</h4>
+            <p>fauzan@gmail.com</p>
+          </div>
+        </div>
+      </header>
+
+      <!-- Content -->
+      <section class="content">
+        <!-- Cards -->
+        <div class="cards">
+          <div class="card-one">
+            <div class="card-title">
+              <h3>Total Users</h3>
+              <i class="bx bxs-happy-heart-eyes"></i>
+            </div>
+            <p>500</p>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <h3>Orders</h3>
+              <i class="bx bxs-food-menu"></i>
+            </div>
+            <p>150</p>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <h3>Revenue</h3>
+              <i class="bx bx-money"></i>
+            </div>
+            <p>Rp 3.000.000</p>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <h3>New Message</h3>
+              <i class="bx bxs-message-square-detail"></i>
+            </div>
+            <p>75</p>
+          </div>
+        </div>
+
+        <!-- Table -->
+        <div class="table-section">
+          <h2>Recent Users</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Fauzan</td>
+                <td>fauzan@gmail.com</td>
+                <td>Admin</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

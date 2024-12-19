@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("image/bgJpg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper-card {
+  width: 600px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+}
+
+.card {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Title styling */
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.description {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.form-input .input-group {
+  margin-bottom: 15px;
+}
+
+.form-input input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-input input::placeholder {
+  font-size: 15px;
+}
+
+.form-input input:focus {
+  border: 2px solid;
+  border-color: #007bff;
+}
+
+.form-input .forgot-password {
+  margin-top: -12px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.forgot-password a {
+  color: #007bff;
+  text-decoration: none;
+  margin-left: 5px;
+  transition: all 0.3s ease;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.form-input .existing-user {
+  display: flex;
+  margin-top: 10px;
+  font-size: 15px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.existing-user a {
+  text-decoration: none;
+  color: rgb(9, 113, 249);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.existing-user a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+  .wrapper-card {
+    width: 450px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .description {
+    font-size: 15px;
+  }
+  .form-input .forgot-password {
+    font-size: 13px;
+  }
+
+  .form-input .existing-user {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 400px) {
+  .wrapper-card {
+    width: 280px;
+  }
+  .title {
+    font-size: 17px;
+  }
+  .description {
+    font-size: 12px;
+  }
+  .form-input .forgot-password {
+    font-size: 11px;
+  }
+  .form-input .existing-user {
+    font-size: 11px;
+  }
+}
